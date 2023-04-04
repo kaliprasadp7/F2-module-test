@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management CRUD</h1>
+
+        <div class="form-container">
+            <form>
+                <div>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="gpa" placeholder="GPA" required>
+                </div>
+                <div>
+                    <input type="number" id="age" placeholder="Age" required>
+                    <input type="text" id="degree" placeholder="Degree" required>
+                </div>
+                <button class="submit" id="submit">Add Student</button>
+            </form>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search By Name, email or degree" onkeyup="searchFunc()">
+        </div>
+
+        <div class="content">
+            <table id="mytable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>GPA</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody id="records">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Sikun</td>
+                        <td>abc@gmail.com</td>
+                        <td>15</td>
+                        <td>9.6</td>
+                        <td>MCA
+                            <span class="icons">
+                                <span class="material-symbols-outlined">edit_square</span>
+                                <span class="material-symbols-outlined">delete</span>
+                            </span>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

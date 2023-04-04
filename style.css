@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.container{
+    margin:20px;
+}
+input{
+    width: 31%;
+    height: 5vh;
+    padding-left: 10px;
+    /* border-color: white; */
+}
+.form-container div{
+    display: flex;
+    gap: 30px;
+    margin-top: 3vh;
+}
+.submit{
+    width: 40%;
+    height: 5vh;
+    margin-top: 3vh;
+    background-color: white;
+    color: black;
+}
+.search-bar{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+.search-bar input{
+    width: 99%;
+}
+table, th{
+    border: 1px solid white;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+td{
+    padding-left: 10px;
+    border-left: 1px solid white;
+}
+.icons{
+    float: right;
+    margin-right: 10px;
+}
+.icons span{
+    cursor: pointer;
+}
+
