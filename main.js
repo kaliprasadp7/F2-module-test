@@ -46,7 +46,7 @@ function saveInfo(){
 
 function displayInfo(){
     let statement ='';
-    userArray.forEach((user,i) => {
+    userArray?.forEach((user,i) => {
         statement += `<tr>
         <td>${i+1}</td>
         <td>${user.name}</td>
