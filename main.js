@@ -11,7 +11,7 @@ let edit_id= null;
 
 
 let objstr=localStorage.getItem('users');
-userArray=JSON.parse(objstr);
+userArray=JSON.parse(objstr)||[];
 console.log(userArray);
 displayInfo();
 
